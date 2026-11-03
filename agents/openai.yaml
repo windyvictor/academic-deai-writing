@@ -1,0 +1,6 @@
+interface:
+  display_name: "科研写作去 AI 味"
+  short_description: "保留科研事实与证据强度，清理套话并恢复自然、可核对的论证"
+  default_prompt: "使用 $academic-deai-writing 改写这段科研文本，保留事实、数字、限定和引用，只修复表达与论证。"
+policy:
+  allow_implicit_invocation: true

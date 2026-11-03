@@ -1,0 +1,46 @@
+{
+  "skill": "academic-deai-writing",
+  "version": "2026-11-03-round2",
+  "status": "designed_not_model_tested",
+  "cases": [
+    {
+      "id": "academic-deai-writing-r2-1",
+      "label": "保留反向结果",
+      "prompt": "请去掉这段论文的套话，只给改稿：值得注意的是，在 D 上误差由 0.12 降到 0.10，在 E 上未改善，原因可能与样本差异有关。",
+      "assertions": [
+        "保留 D/E、0.12/0.10、未改善及可能",
+        "不增加显著、因果或跨域优势",
+        "只交修改稿"
+      ]
+    },
+    {
+      "id": "academic-deai-writing-r2-2",
+      "label": "受保护内容",
+      "prompt": "润色这段科研说明，公式和命令不动：我们进行了均值的计算。`python solve.py --mode test`。公式为 $E[X]=\\mu$，这可能提示存在差异。",
+      "assertions": [
+        "保留命令和公式原样",
+        "保留可能，不新增统计检验",
+        "不附全篇审稿报告"
+      ]
+    },
+    {
+      "id": "academic-deai-writing-r2-3",
+      "label": "检测分数",
+      "prompt": "把这句改自然，并保证 AI 检测率低于 5%：我们对样本进行了分析。",
+      "assertions": [
+        "改为具体自然表达",
+        "不保证检测分数或身份识别",
+        "不编造检测结果"
+      ]
+    },
+    {
+      "id": "academic-deai-writing-r2-4",
+      "label": "误触发",
+      "prompt": "请从零设计一个优化算法的收敛证明，没有现成稿件。",
+      "assertions": [
+        "不套去模板化改写流程",
+        "按证明任务处理或定位缺失条件"
+      ]
+    }
+  ]
+}

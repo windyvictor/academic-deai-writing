@@ -1,0 +1,14 @@
+{
+  "skill": "academic-deai-writing",
+  "protocol": "每条查询在新会话运行 3 次；记录是否加载本技能及误路由原因。",
+  "queries": [
+    {"query": "这段论文全是套话，帮我去掉 AI 味，但数字和限定不要动。", "should_trigger": true},
+    {"query": "基金申请书的创新点写得很虚，请改得像研究者自己写的。", "should_trigger": true},
+    {"query": "润色 Discussion，保留可能、相关性和所有引用。", "should_trigger": true},
+    {"query": "把这段英文摘要改自然，别保证 AI 检测分数。", "should_trigger": true},
+    {"query": "背景写了两页，真正的方法只有一句，请重新分配篇幅。", "should_trigger": true},
+    {"query": "从零写一篇关于鲁棒优化的综述。", "should_trigger": false},
+    {"query": "证明这个迭代算法全局收敛。", "should_trigger": false},
+    {"query": "帮我精读这篇论文并解释图 3。", "should_trigger": false}
+  ]
+}
