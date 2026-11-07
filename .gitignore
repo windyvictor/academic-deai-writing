@@ -3,3 +3,6 @@ __pycache__/
 *.py[cod]
 *.log
 *.tmp
+
+# WorkBuddy workspace data (local only)
+.workbuddy/
